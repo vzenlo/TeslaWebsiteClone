@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      #logo {
+        height: 12px;
+        width: 100px;
+        margin-left: 37px;
+        margin-top: 10px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        position: fixed;
+      }
+
+      #ul {
+        list-style-type: none; /* having the list type as 
+        none makes it so that the period are gone*/
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px; 
+        margin-left: 0px;
+        padding-left: 0%;
+        margin-bottom: 0px;
+        margin-left: 250px;
+        cursor: pointer;
+      }
+
+      .li {
+        margin-left: 35px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .li:hover {
+        border-radius: 200px;
+        color: white;
+      }
+
+      #account {
+        margin-top: 10px;
+        cursor: pointer;
+        margin-left: 40px;
+      }
+
+      #account:hover {
+        border-radius: 200px;
+        color: white;
+      }
+      #shop {
+        margin-left: 230px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      #shop:hover {
+        border-radius: 200px;
+        color: white;
+      }
+      #menu {
+        margin-top: 10px;
+        cursor: pointer;
+        margin-left: 30px;
+      }
+      #menu:hover {
+        border-radius: 200px;
+        color: white;
+      }
+
+      #Model {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-left: 60px;
+      }
+
+      #Text {
+        margin-left: 600px;
+      }
+
+      #button1 {
+        border-radius: 100px;
+        height: 31px;
+        width: 200px;
+        font-size: medium;
+        background-color: black;
+        color: white;
+        margin-top: 430px;
+        margin-left: 500px;
+        margin-bottom: 30px;
+        cursor: pointer;
+      }
+
+      #button2 {
+        border-radius: 100px;
+        height: 31px;
+        width: 200px;
+        font-size: medium;
+        margin-left: 40px;
+        border-color: white;
+        background-color: white;
+        cursor: pointer;
+      }
+      .bg-image {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat; /* Background repeat, no repeat means only one piction shows up 
+        but if its just repeat then it will be multiple pictures all around screen*/
+        background-size: cover; /* cover on a background-size means that the picture will fit the screen*/
+        transition-duration: 4s;
+        transition-delay: 2s;
+      }
+
+      #header2 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      #body2 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #footer2 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      #Touch {
+        cursor: pointer;
+      }
+
+      .img1 {
+        background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/c82315a6-ac99-464a-a753-c26bc0fb647d/bvlatuR/std/1200x628/lhd-model-3-social);
+      }
+      .img2 {
+        background-image: url(https://www.aroged.com/wp-content/uploads/2021/08/Tesla-Model-Y-now-available-in-Belgium-Aroged.png);
+      }
+      .img3 {
+        background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2022-tesla-model-s-plaid-mmp-1-1628541250.png);
+      }
+      .img4 {
+        background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/da705069-91b5-41cb-86f3-86a585c6fdf3/bvlatuR/std/2880x1800/MX-Hero-Desktop);
+      }
+      .img5 {
+        background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/45992f1c-a33a-4a04-b1f0-338aff182f8e/bvlatuR/std/2880x1800/_25-Hero-D);
+      }
+
+      .img6 {
+        background-image: url(https://www.tesla.com/sites/default/files/solarroof/v3/design/solar-roof_design_D.jpg);
+      }
+
+      .img7 {
+        background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/11/Tesla-Electric-Car-Home-Charger-1024x650.jpg);
+      }
+
+      #TeslaFooter {
+        margin-left: 420px;
+      }
+      #PrivacyFooter {
+        margin-left: 30px;
+      }
+      #ContactFooter {
+        margin-left: 30px;
+      }
+      #CareerFooter {
+        margin-left: 30px;
+      }
+      #NewsFooter {
+        margin-left: 30px;
+      }
+      #EngageFooter {
+        margin-left: 30px;
+      }
+      #LocationsFooter {
+        margin-left: 30px;
+      }
+      .copy {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="header2">
+        <img
+          src="https://www.freepnglogos.com/uploads/tesla-logo-png-20.png"
+          id="logo"
+        />
+        <ul id="ul">
+          <li class="li">Model S</li>
+          <li class="li">Model 3</li>
+          <li class="li">Model X</li>
+          <li class="li">Model Y</li>
+          <li class="li">Solar Roof</li>
+          <li class="li">Solar Panels</li>
+        </ul>
+
+        <span id="shop"> Shop </span>
+        <span id="account"> Account </span>
+        <span id="menu"> Menu </span>
+      </div>
+      <div id="body2">
+        <body id="body">
+          <p id="Model">Model Y</p>
+          <span id="Text">
+            Order Online for <u id="Touch">Touchless Delivery</u></span
+          >
+        </body>
+      </div>
+      <div id="footer2">
+        <footer id="footer">
+          <div>
+            <button id="button1">Custom Order</button>
+            <button id="button2">Existing Inventory</button>
+          </div>
+
+          <div>
+            <span id="TeslaFooter" class="copy"> Tesla © 2022</span>
+            <span id="PrivacyFooter" class="copy"> Privacy & Legal</span>
+            <span id="ContactFooter" class="copy"> Contact</span>
+            <span id="CareerFooter" class="copy"> Careers</span>
+            <span id="NewsFooter" class="copy"> News</span>
+            <span id="EngageFooter" class="copy"> Engage </span>
+            <span id="LocationsFooter" class="copy"> Locations</span>
+          </div>
+        </footer>
+      </div>
+    </header>
+
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div>
+    <div class="bg-image img7"></div>
+  </body>
+</html>
